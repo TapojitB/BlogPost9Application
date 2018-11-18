@@ -1,165 +1,91 @@
-2018-11-17 10:47:59.212  INFO 1784 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2018-11-17 10:47:59.514  INFO 1784 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e975273] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-11-17 10:48:01.236  INFO 1784 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
-2018-11-17 10:48:04.277  INFO 1784 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=dimension-service, profiles=[dev], label=null, version=c029c284b5db6a02d40e312ca5b73a8ca9831ffa, state=null
-2018-11-17 10:48:04.278  INFO 1784 --- [restartedMain] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/TapojitB/BlogPost8Application/ConfigData/dimension-service-dev.properties'}, MapPropertySource {name='https://github.com/TapojitB/BlogPost8Application/ConfigData/dimension-service.properties'}]}
-2018-11-17 10:48:04.323  INFO 1784 --- [restartedMain] c.e.m.d.DimensionServiceApplication      : The following profiles are active: dev
-2018-11-17 10:48:05.544  WARN 1784 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2018-11-17 10:48:05.791  INFO 1784 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f7c1ab15-9a9f-3885-8698-ddeb1c175dfc
-2018-11-17 10:48:05.899  INFO 1784 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e975273] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-11-17 10:48:06.519  INFO 1784 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2018-11-17 10:48:06.541  INFO 1784 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2018-11-17 10:48:06.541  INFO 1784 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
-2018-11-17 10:48:06.549  INFO 1784 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_191/bin/server;C:/Program Files/Java/jre1.8.0_191/bin;C:/Program Files/Java/jre1.8.0_191/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_191\bin;C:\Users\TapojitBhattacharya\Softwares\apache-maven-3.6.0\bin;C:\Program Files\IBM\Bluemix\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\TapojitBhattacharya\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\CVSNT\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;C:\Users\TapojitBhattacharya\Documents\Personal\Softwares\sts-4.0.1.RELEASE;;.]
-2018-11-17 10:48:06.909  INFO 1784 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2018-11-17 10:48:06.909  INFO 1784 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2571 ms
-2018-11-17 10:48:07.074  WARN 1784 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2018-11-17 10:48:07.075  INFO 1784 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2018-11-17 10:48:07.088  INFO 1784 --- [restartedMain] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@51f403e7
-2018-11-17 10:48:08.734  INFO 1784 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-2018-11-17 10:48:10.298  INFO 1784 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-2018-11-17 10:48:10.381  INFO 1784 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2018-11-17 10:48:10.443  INFO 1784 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2018-11-17 10:48:10.922  INFO 1784 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2018-11-17 10:48:10.924  INFO 1784 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2018-11-17 10:48:11.078  INFO 1784 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2018-11-17 10:48:11.080  INFO 1784 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2018-11-17 10:48:11.400  INFO 1784 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 10:48:11.702  INFO 1784 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2018-11-17 10:48:11.702  INFO 1784 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2018-11-17 10:48:11.704  INFO 1784 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2018-11-17 10:48:11.704  INFO 1784 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2018-11-17 10:48:11.705  INFO 1784 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2018-11-17 10:48:11.705  INFO 1784 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2018-11-17 10:48:11.706  INFO 1784 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2018-11-17 10:48:11.932  INFO 1784 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2018-11-17 10:48:11.937  INFO 1784 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2018-11-17 10:48:11.942  INFO 1784 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2018-11-17 10:48:11.951  INFO 1784 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1542431891949 with initial instances count: 2
-2018-11-17 10:48:12.271  INFO 1784 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-11-17 10:48:12.272  INFO 1784 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
-2018-11-17 10:48:12.272  INFO 1784 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-11-17 10:48:12.272  INFO 1784 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
-2018-11-17 10:48:12.273  INFO 1784 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2018-11-17 10:48:12.273  INFO 1784 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
-2018-11-17 10:48:12.273  INFO 1784 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
-2018-11-17 10:48:12.339  WARN 1784 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2018-11-17 10:48:12.339  INFO 1784 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2018-11-17 10:48:12.574  INFO 1784 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-11-17 10:48:13.115  WARN 1784 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2018-11-17 10:48:13.203  INFO 1784 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2018-11-17 10:48:13.346  INFO 1784 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application dimension-service with eureka with status UP
-2018-11-17 10:48:13.348  INFO 1784 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1542431893348, current=UP, previous=STARTING]
-2018-11-17 10:48:13.351  INFO 1784 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DIMENSION-SERVICE/localhost:dimension-service:8080: registering service...
-2018-11-17 10:48:13.422  INFO 1784 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DIMENSION-SERVICE/localhost:dimension-service:8080 - registration status: 204
-2018-11-17 10:48:13.460  INFO 1784 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2018-11-17 10:48:13.463  INFO 1784 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
-2018-11-17 10:48:13.468  INFO 1784 --- [restartedMain] c.e.m.d.DimensionServiceApplication      : Started DimensionServiceApplication in 16.395 seconds (JVM running for 17.963)
-2018-11-17 10:53:11.711  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 10:58:11.720  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 11:03:11.724  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 11:08:11.727  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 11:13:11.729  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 11:18:11.733  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 11:23:11.737  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 11:28:11.744  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 11:33:11.748  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 11:38:11.753  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 11:43:11.755  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 11:48:11.758  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 11:53:11.764  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 11:58:11.768  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 12:03:11.774  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 12:08:11.777  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 12:13:11.780  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 12:18:11.784  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 12:23:11.787  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 12:28:11.790  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 12:33:11.801  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 12:38:11.813  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 12:43:11.824  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 12:48:11.832  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 12:53:11.835  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 12:58:11.838  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 13:03:11.844  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 13:08:11.848  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 13:13:11.850  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 13:18:11.854  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 13:23:11.870  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 13:28:11.882  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 13:33:11.889  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 13:38:11.893  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 13:43:11.895  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 13:48:11.901  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 13:53:11.917  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 13:58:11.933  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 14:03:11.942  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 14:08:11.948  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 14:13:11.965  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 14:18:11.971  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 14:23:11.978  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 14:28:11.984  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 14:33:12.001  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 14:38:12.016  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 14:43:12.033  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 14:48:12.048  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 14:53:12.063  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 14:58:12.078  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 15:03:12.083  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 15:08:12.089  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 15:13:12.095  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 15:18:12.112  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 15:23:12.127  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 16:40:16.528  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 16:45:16.546  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 16:50:16.559  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 16:55:16.562  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 17:00:16.566  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 17:05:16.570  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 17:10:16.573  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 17:15:16.575  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 17:20:16.578  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 17:25:16.583  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 17:30:16.584  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 17:35:16.601  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 17:40:16.617  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 17:45:16.632  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 17:50:16.648  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 17:55:16.656  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 18:00:16.662  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 18:05:16.679  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 18:10:16.694  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 18:15:16.710  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 18:20:16.727  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 18:25:16.743  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 18:30:16.757  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 18:35:16.772  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 18:40:16.789  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 18:45:16.804  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 18:50:16.835  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 18:55:16.850  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 18:57:31.573  INFO 1784 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DIMENSION-SERVICE/localhost:dimension-service:8080 - Re-registering apps/DIMENSION-SERVICE
-2018-11-17 18:57:31.588  INFO 1784 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DIMENSION-SERVICE/localhost:dimension-service:8080: registering service...
-2018-11-17 18:57:31.636  INFO 1784 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DIMENSION-SERVICE/localhost:dimension-service:8080 - registration status: 204
-2018-11-17 18:58:01.435  INFO 1784 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2018-11-17 18:58:01.440  INFO 1784 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2018-11-17 18:58:01.452  INFO 1784 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2018-11-17 18:58:01.452  INFO 1784 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2018-11-17 18:58:01.452  INFO 1784 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2018-11-17 18:58:01.452  INFO 1784 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
-2018-11-17 18:58:01.452  INFO 1784 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2018-11-17 18:58:01.483  INFO 1784 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2018-11-17 19:00:16.851  INFO 1784 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 19:00:19.632  INFO 1784 --- [RMI TCP Connection(586)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2018-11-17 19:00:19.696  INFO 1784 --- [RMI TCP Connection(586)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application dimension-service with eureka with status DOWN
-2018-11-17 19:00:19.696  WARN 1784 --- [RMI TCP Connection(586)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1542461419696, current=DOWN, previous=UP]
-2018-11-17 19:00:19.711  INFO 1784 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DIMENSION-SERVICE/localhost:dimension-service:8080: registering service...
-2018-11-17 19:00:19.741  INFO 1784 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DIMENSION-SERVICE/localhost:dimension-service:8080 - registration status: 204
-2018-11-17 19:00:19.850  INFO 1784 --- [RMI TCP Connection(586)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-11-17 19:00:19.960  INFO 1784 --- [RMI TCP Connection(586)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
-2018-11-17 19:00:20.022  WARN 1784 --- [RMI TCP Connection(586)-127.0.0.1] .s.c.a.CommonAnnotationBeanPostProcessor : Destroy method on bean with name 'scopedTarget.eurekaClient' threw an exception: org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
-2018-11-17 19:00:20.475  INFO 1784 --- [RMI TCP Connection(586)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2018-11-17 19:00:20.620  WARN 1784 --- [RMI TCP Connection(586)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [Eureka-JerseyClient-Conn-Cleaner2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2018-11-18 12:55:12.406  INFO 9680 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2018-11-18 12:55:12.653  INFO 9680 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c9b13259] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-18 12:55:14.193  INFO 9680 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2018-11-18 12:55:33.023  INFO 9680 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=dimension-service, profiles=[dev], label=null, version=cb896b6bd0959a621d18eb2aeb14d3db933297ed, state=null
+2018-11-18 12:55:33.032  INFO 9680 --- [restartedMain] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/TapojitB/BlogPost9Application/ConfigData/dimension-service-dev.properties'}, MapPropertySource {name='https://github.com/TapojitB/BlogPost9Application/ConfigData/dimension-service.properties'}]}
+2018-11-18 12:55:33.080  INFO 9680 --- [restartedMain] c.e.m.d.DimensionServiceApplication      : The following profiles are active: dev
+2018-11-18 12:55:34.327  WARN 9680 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2018-11-18 12:55:34.699  INFO 9680 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f7c1ab15-9a9f-3885-8698-ddeb1c175dfc
+2018-11-18 12:55:34.903  INFO 9680 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c9b13259] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-18 12:55:35.591  INFO 9680 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-11-18 12:55:35.612  INFO 9680 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-11-18 12:55:35.612  INFO 9680 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-11-18 12:55:35.612  INFO 9680 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_191/bin/server;C:/Program Files/Java/jre1.8.0_191/bin;C:/Program Files/Java/jre1.8.0_191/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_191\bin;C:\Users\TapojitBhattacharya\Softwares\apache-maven-3.6.0\bin;C:\Program Files\IBM\Bluemix\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\TapojitBhattacharya\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\CVSNT\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;C:\Users\TapojitBhattacharya\Documents\Personal\Softwares\sts-4.0.1.RELEASE;;.]
+2018-11-18 12:55:35.943  INFO 9680 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-11-18 12:55:35.943  INFO 9680 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2832 ms
+2018-11-18 12:55:36.115  WARN 9680 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-11-18 12:55:36.115  INFO 9680 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-11-18 12:55:36.130  INFO 9680 --- [restartedMain] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@c25f57a
+2018-11-18 12:55:37.815  INFO 9680 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2018-11-18 12:55:39.289  INFO 9680 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2018-11-18 12:55:39.338  INFO 9680 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-11-18 12:55:39.400  INFO 9680 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-11-18 12:55:39.882  INFO 9680 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-11-18 12:55:39.882  INFO 9680 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-11-18 12:55:40.054  INFO 9680 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-11-18 12:55:40.054  INFO 9680 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-11-18 12:55:40.398  INFO 9680 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-11-18 12:55:40.658  INFO 9680 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-11-18 12:55:40.658  INFO 9680 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-11-18 12:55:40.658  INFO 9680 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-11-18 12:55:40.658  INFO 9680 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-11-18 12:55:40.658  INFO 9680 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-11-18 12:55:40.658  INFO 9680 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-11-18 12:55:40.658  INFO 9680 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-11-18 12:55:40.898  INFO 9680 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-11-18 12:55:40.898  INFO 9680 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2018-11-18 12:55:40.913  INFO 9680 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-11-18 12:55:40.913  INFO 9680 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1542525940913 with initial instances count: 1
+2018-11-18 12:55:41.226  INFO 9680 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-18 12:55:41.226  INFO 9680 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-11-18 12:55:41.226  INFO 9680 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-18 12:55:41.226  INFO 9680 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-11-18 12:55:41.226  INFO 9680 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-18 12:55:41.226  INFO 9680 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-11-18 12:55:41.226  INFO 9680 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-18 12:55:41.288  WARN 9680 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-11-18 12:55:41.288  INFO 9680 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-11-18 12:55:41.554  INFO 9680 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-11-18 12:55:42.113  WARN 9680 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2018-11-18 12:55:42.191  INFO 9680 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2018-11-18 12:55:42.347  INFO 9680 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application dimension-service with eureka with status UP
+2018-11-18 12:55:42.363  INFO 9680 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1542525942363, current=UP, previous=STARTING]
+2018-11-18 12:55:42.363  INFO 9680 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DIMENSION-SERVICE/localhost:dimension-service:8080: registering service...
+2018-11-18 12:55:42.464  INFO 9680 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DIMENSION-SERVICE/localhost:dimension-service:8080 - registration status: 204
+2018-11-18 12:55:42.511  INFO 9680 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-11-18 12:55:42.511  INFO 9680 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2018-11-18 12:55:42.511  INFO 9680 --- [restartedMain] c.e.m.d.DimensionServiceApplication      : Started DimensionServiceApplication in 32.067 seconds (JVM running for 33.364)
+2018-11-18 13:00:40.686  INFO 9680 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-11-18 13:05:40.693  INFO 9680 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-11-18 13:08:57.813  INFO 9680 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-11-18 13:08:57.816  INFO 9680 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-11-18 13:08:57.932  INFO 9680 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 114 ms
+2018-11-18 13:10:40.695  INFO 9680 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-11-18 13:15:40.699  INFO 9680 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-11-18 13:20:40.703  INFO 9680 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-11-18 13:25:40.707  INFO 9680 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-11-18 13:30:40.728  INFO 9680 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-11-18 13:35:40.746  INFO 9680 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-11-18 13:40:40.759  INFO 9680 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-11-18 13:45:40.763  INFO 9680 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-11-18 13:50:40.768  INFO 9680 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-11-18 13:55:40.775  INFO 9680 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-11-18 14:00:40.790  INFO 9680 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-11-18 14:05:40.811  INFO 9680 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-11-18 14:10:40.833  INFO 9680 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-11-18 14:15:40.855  INFO 9680 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-11-18 14:20:40.863  INFO 9680 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-11-18 14:25:40.877  INFO 9680 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-11-18 14:29:55.726  INFO 9680 --- [RMI TCP Connection(122)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2018-11-18 14:29:55.778  INFO 9680 --- [RMI TCP Connection(122)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application dimension-service with eureka with status DOWN
+2018-11-18 14:29:55.782  WARN 9680 --- [RMI TCP Connection(122)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1542531595778, current=DOWN, previous=UP]
+2018-11-18 14:29:55.782  INFO 9680 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DIMENSION-SERVICE/localhost:dimension-service:8080: registering service...
+2018-11-18 14:29:55.893  INFO 9680 --- [RMI TCP Connection(122)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2018-11-18 14:29:55.940  INFO 9680 --- [RMI TCP Connection(122)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2018-11-18 14:29:55.986  WARN 9680 --- [RMI TCP Connection(122)-127.0.0.1] .s.c.a.CommonAnnotationBeanPostProcessor : Destroy method on bean with name 'scopedTarget.eurekaClient' threw an exception: org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2018-11-18 14:29:56.315  INFO 9680 --- [RMI TCP Connection(122)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-11-18 14:29:56.330  INFO 9680 --- [RMI TCP Connection(122)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2018-11-18 14:29:56.361  WARN 9680 --- [RMI TCP Connection(122)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [Eureka-JerseyClient-Conn-Cleaner2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
@@ -169,7 +95,7 @@
  java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
  java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
  java.lang.Thread.run(Unknown Source)
-2018-11-17 19:00:20.620  WARN 1784 --- [RMI TCP Connection(586)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [AsyncResolver-bootstrap-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2018-11-18 14:29:56.361  WARN 9680 --- [RMI TCP Connection(122)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [AsyncResolver-bootstrap-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
@@ -179,7 +105,7 @@
  java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
  java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
  java.lang.Thread.run(Unknown Source)
-2018-11-17 19:00:20.636  WARN 1784 --- [RMI TCP Connection(586)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [DiscoveryClient-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2018-11-18 14:29:56.361  WARN 9680 --- [RMI TCP Connection(122)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [DiscoveryClient-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.park(Unknown Source)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
@@ -189,7 +115,7 @@
  java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
  java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
  java.lang.Thread.run(Unknown Source)
-2018-11-17 19:00:20.639  WARN 1784 --- [RMI TCP Connection(586)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [DiscoveryClient-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2018-11-18 14:29:56.361  WARN 9680 --- [RMI TCP Connection(122)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [DiscoveryClient-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
@@ -199,150 +125,7 @@
  java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
  java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
  java.lang.Thread.run(Unknown Source)
-2018-11-17 19:00:20.640  WARN 1784 --- [RMI TCP Connection(586)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [DiscoveryClient-InstanceInfoReplicator-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- sun.misc.Unsafe.park(Native Method)
- java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
- java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
- java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
- java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
- java.lang.Thread.run(Unknown Source)
-2018-11-17 19:00:20.640  WARN 1784 --- [RMI TCP Connection(586)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [DiscoveryClient-HeartbeatExecutor-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- sun.misc.Unsafe.park(Native Method)
- java.util.concurrent.locks.LockSupport.park(Unknown Source)
- java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(Unknown Source)
- java.util.concurrent.SynchronousQueue$TransferStack.transfer(Unknown Source)
- java.util.concurrent.SynchronousQueue.take(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
- java.lang.Thread.run(Unknown Source)
-2018-11-17 19:00:20.640  WARN 1784 --- [RMI TCP Connection(586)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [DiscoveryClient-CacheRefreshExecutor-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- sun.misc.Unsafe.park(Native Method)
- java.util.concurrent.locks.LockSupport.park(Unknown Source)
- java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(Unknown Source)
- java.util.concurrent.SynchronousQueue$TransferStack.transfer(Unknown Source)
- java.util.concurrent.SynchronousQueue.take(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
- java.lang.Thread.run(Unknown Source)
-2018-11-17 19:00:20.640  WARN 1784 --- [RMI TCP Connection(586)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [AsyncResolver-bootstrap-executor-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- sun.misc.Unsafe.park(Native Method)
- java.util.concurrent.locks.LockSupport.park(Unknown Source)
- java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(Unknown Source)
- java.util.concurrent.SynchronousQueue$TransferStack.transfer(Unknown Source)
- java.util.concurrent.SynchronousQueue.take(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
- java.lang.Thread.run(Unknown Source)
-2018-11-17 19:00:27.694  INFO 12672 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2018-11-17 19:00:27.979  INFO 12672 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$15d2a112] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-11-17 19:00:28.601  INFO 12672 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
-2018-11-17 19:00:41.978  INFO 12672 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=dimension-service, profiles=[dev], label=null, version=35488236d6d86487499c71f161dbc5d1c82ed5d3, state=null
-2018-11-17 19:00:41.979  INFO 12672 --- [restartedMain] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/TapojitB/BlogPost8Application/ConfigData/dimension-service-dev.properties'}, MapPropertySource {name='https://github.com/TapojitB/BlogPost8Application/ConfigData/dimension-service.properties'}]}
-2018-11-17 19:00:42.043  INFO 12672 --- [restartedMain] c.e.m.d.DimensionServiceApplication      : The following profiles are active: dev
-2018-11-17 19:00:43.194  WARN 12672 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2018-11-17 19:00:43.460  INFO 12672 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f7c1ab15-9a9f-3885-8698-ddeb1c175dfc
-2018-11-17 19:00:43.586  INFO 12672 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$15d2a112] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-11-17 19:00:44.320  INFO 12672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2018-11-17 19:00:44.343  INFO 12672 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2018-11-17 19:00:44.343  INFO 12672 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
-2018-11-17 19:00:44.343  INFO 12672 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_191/bin/server;C:/Program Files/Java/jre1.8.0_191/bin;C:/Program Files/Java/jre1.8.0_191/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_191\bin;C:\Users\TapojitBhattacharya\Softwares\apache-maven-3.6.0\bin;C:\Program Files\IBM\Bluemix\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\TapojitBhattacharya\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\CVSNT\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;C:\Users\TapojitBhattacharya\Documents\Personal\Softwares\sts-4.0.1.RELEASE;;.]
-2018-11-17 19:00:44.671  INFO 12672 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2018-11-17 19:00:44.671  INFO 12672 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2597 ms
-2018-11-17 19:00:44.811  WARN 12672 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2018-11-17 19:00:44.811  INFO 12672 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2018-11-17 19:00:44.831  INFO 12672 --- [restartedMain] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4d051a1
-2018-11-17 19:00:46.259  INFO 12672 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2018-11-17 19:00:46.300  INFO 12672 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2018-11-17 19:00:46.913  INFO 12672 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2018-11-17 19:00:46.913  INFO 12672 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2018-11-17 19:00:47.063  INFO 12672 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2018-11-17 19:00:47.063  INFO 12672 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2018-11-17 19:00:47.392  INFO 12672 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 19:00:47.722  INFO 12672 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2018-11-17 19:00:47.722  INFO 12672 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2018-11-17 19:00:47.722  INFO 12672 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2018-11-17 19:00:47.722  INFO 12672 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2018-11-17 19:00:47.722  INFO 12672 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2018-11-17 19:00:47.722  INFO 12672 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2018-11-17 19:00:47.722  INFO 12672 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2018-11-17 19:00:47.987  INFO 12672 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2018-11-17 19:00:47.987  INFO 12672 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2018-11-17 19:00:48.003  INFO 12672 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2018-11-17 19:00:48.003  INFO 12672 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1542461448003 with initial instances count: 14
-2018-11-17 19:00:48.312  INFO 12672 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-11-17 19:00:48.315  INFO 12672 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
-2018-11-17 19:00:48.315  INFO 12672 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-11-17 19:00:48.315  INFO 12672 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
-2018-11-17 19:00:48.315  INFO 12672 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2018-11-17 19:00:48.317  INFO 12672 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
-2018-11-17 19:00:48.318  INFO 12672 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
-2018-11-17 19:00:48.383  WARN 12672 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2018-11-17 19:00:48.383  INFO 12672 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2018-11-17 19:00:48.631  INFO 12672 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-11-17 19:00:49.289  WARN 12672 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2018-11-17 19:00:49.367  INFO 12672 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2018-11-17 19:00:49.494  INFO 12672 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application dimension-service with eureka with status UP
-2018-11-17 19:00:49.498  INFO 12672 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1542461449497, current=UP, previous=STARTING]
-2018-11-17 19:00:49.501  INFO 12672 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DIMENSION-SERVICE/9.85.74.17:dimension-service:8080: registering service...
-2018-11-17 19:00:49.564  INFO 12672 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DIMENSION-SERVICE/9.85.74.17:dimension-service:8080 - registration status: 204
-2018-11-17 19:00:49.600  INFO 12672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2018-11-17 19:00:49.600  INFO 12672 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
-2018-11-17 19:00:49.616  INFO 12672 --- [restartedMain] c.e.m.d.DimensionServiceApplication      : Started DimensionServiceApplication in 23.248 seconds (JVM running for 24.611)
-2018-11-17 19:03:53.535  INFO 12672 --- [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2018-11-17 19:03:53.538  INFO 12672 --- [RMI TCP Connection(11)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application dimension-service with eureka with status DOWN
-2018-11-17 19:03:53.539  WARN 12672 --- [RMI TCP Connection(11)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1542461633539, current=DOWN, previous=UP]
-2018-11-17 19:03:53.540  INFO 12672 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DIMENSION-SERVICE/9.85.74.17:dimension-service:8080: registering service...
-2018-11-17 19:03:53.545  INFO 12672 --- [RMI TCP Connection(11)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-11-17 19:03:53.551  INFO 12672 --- [RMI TCP Connection(11)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
-2018-11-17 19:03:53.555  WARN 12672 --- [RMI TCP Connection(11)-127.0.0.1] .s.c.a.CommonAnnotationBeanPostProcessor : Destroy method on bean with name 'scopedTarget.eurekaClient' threw an exception: org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
-2018-11-17 19:03:53.948  INFO 12672 --- [RMI TCP Connection(11)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2018-11-17 19:03:53.960  WARN 12672 --- [RMI TCP Connection(11)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [Eureka-JerseyClient-Conn-Cleaner2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- sun.misc.Unsafe.park(Native Method)
- java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
- java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
- java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
- java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
- java.lang.Thread.run(Unknown Source)
-2018-11-17 19:03:53.961  WARN 12672 --- [RMI TCP Connection(11)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [AsyncResolver-bootstrap-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- sun.misc.Unsafe.park(Native Method)
- java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
- java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
- java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
- java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
- java.lang.Thread.run(Unknown Source)
-2018-11-17 19:03:53.962  WARN 12672 --- [RMI TCP Connection(11)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [DiscoveryClient-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- sun.misc.Unsafe.park(Native Method)
- java.util.concurrent.locks.LockSupport.park(Unknown Source)
- java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
- java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
- java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
- java.lang.Thread.run(Unknown Source)
-2018-11-17 19:03:53.963  WARN 12672 --- [RMI TCP Connection(11)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [DiscoveryClient-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- sun.misc.Unsafe.park(Native Method)
- java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
- java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
- java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
- java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
- java.lang.Thread.run(Unknown Source)
-2018-11-17 19:03:53.964  WARN 12672 --- [RMI TCP Connection(11)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [DiscoveryClient-InstanceInfoReplicator-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2018-11-18 14:29:56.361  WARN 9680 --- [RMI TCP Connection(122)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [DiscoveryClient-InstanceInfoReplicator-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
  java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
  java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
@@ -372,7 +155,8 @@
  com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
  com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
  com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
- com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89)
+ com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
+ com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
  com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
  com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
  com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
@@ -390,7 +174,7 @@
  java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
  java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
  java.lang.Thread.run(Unknown Source)
-2018-11-17 19:03:53.965  WARN 12672 --- [RMI TCP Connection(11)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [DiscoveryClient-HeartbeatExecutor-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2018-11-18 14:29:56.361  WARN 9680 --- [RMI TCP Connection(122)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [DiscoveryClient-HeartbeatExecutor-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.park(Unknown Source)
  java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(Unknown Source)
@@ -400,7 +184,7 @@
  java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
  java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
  java.lang.Thread.run(Unknown Source)
-2018-11-17 19:03:53.968  WARN 12672 --- [RMI TCP Connection(11)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [DiscoveryClient-CacheRefreshExecutor-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2018-11-18 14:29:56.377  WARN 9680 --- [RMI TCP Connection(122)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [DiscoveryClient-CacheRefreshExecutor-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.park(Unknown Source)
  java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(Unknown Source)
@@ -410,405 +194,7 @@
  java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
  java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
  java.lang.Thread.run(Unknown Source)
-2018-11-17 19:06:24.046  INFO 10300 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2018-11-17 19:06:24.340  INFO 10300 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$bf0606ed] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-11-17 19:06:25.051  INFO 10300 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
-2018-11-17 19:06:43.082  INFO 10300 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=dimension-service, profiles=[dev], label=null, version=35488236d6d86487499c71f161dbc5d1c82ed5d3, state=null
-2018-11-17 19:06:43.083  INFO 10300 --- [restartedMain] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/TapojitB/BlogPost8Application/ConfigData/dimension-service-dev.properties'}, MapPropertySource {name='https://github.com/TapojitB/BlogPost8Application/ConfigData/dimension-service.properties'}]}
-2018-11-17 19:06:43.161  INFO 10300 --- [restartedMain] c.e.m.d.DimensionServiceApplication      : The following profiles are active: dev
-2018-11-17 19:06:44.586  WARN 10300 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2018-11-17 19:06:44.893  INFO 10300 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f7c1ab15-9a9f-3885-8698-ddeb1c175dfc
-2018-11-17 19:06:45.028  INFO 10300 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$bf0606ed] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2018-11-17 19:06:45.806  INFO 10300 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2018-11-17 19:06:45.829  INFO 10300 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2018-11-17 19:06:45.831  INFO 10300 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
-2018-11-17 19:06:45.843  INFO 10300 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_191/bin/server;C:/Program Files/Java/jre1.8.0_191/bin;C:/Program Files/Java/jre1.8.0_191/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_191\bin;C:\Users\TapojitBhattacharya\Softwares\apache-maven-3.6.0\bin;C:\Program Files\IBM\Bluemix\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\TapojitBhattacharya\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\CVSNT\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;C:\Users\TapojitBhattacharya\Documents\Personal\Softwares\sts-4.0.1.RELEASE;;.]
-2018-11-17 19:06:46.230  INFO 10300 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2018-11-17 19:06:46.230  INFO 10300 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3031 ms
-2018-11-17 19:06:46.410  WARN 10300 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2018-11-17 19:06:46.411  INFO 10300 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2018-11-17 19:06:46.430  INFO 10300 --- [restartedMain] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6be92413
-2018-11-17 19:06:48.101  INFO 10300 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2018-11-17 19:06:48.161  INFO 10300 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2018-11-17 19:06:48.825  INFO 10300 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2018-11-17 19:06:48.826  INFO 10300 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2018-11-17 19:06:49.013  INFO 10300 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2018-11-17 19:06:49.015  INFO 10300 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2018-11-17 19:06:49.514  INFO 10300 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 19:06:49.905  INFO 10300 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2018-11-17 19:06:49.905  INFO 10300 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2018-11-17 19:06:49.907  INFO 10300 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2018-11-17 19:06:49.907  INFO 10300 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2018-11-17 19:06:49.910  INFO 10300 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2018-11-17 19:06:49.910  INFO 10300 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2018-11-17 19:06:49.910  INFO 10300 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2018-11-17 19:06:50.210  INFO 10300 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2018-11-17 19:06:50.217  INFO 10300 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2018-11-17 19:06:50.221  INFO 10300 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2018-11-17 19:06:50.231  INFO 10300 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1542461810230 with initial instances count: 2
-2018-11-17 19:06:50.587  INFO 10300 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2018-11-17 19:06:50.593  INFO 10300 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
-2018-11-17 19:06:50.594  INFO 10300 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2018-11-17 19:06:50.594  INFO 10300 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
-2018-11-17 19:06:50.595  INFO 10300 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2018-11-17 19:06:50.597  INFO 10300 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
-2018-11-17 19:06:50.598  INFO 10300 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
-2018-11-17 19:06:50.703  WARN 10300 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2018-11-17 19:06:50.703  INFO 10300 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2018-11-17 19:06:51.046  INFO 10300 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2018-11-17 19:06:51.645  WARN 10300 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2018-11-17 19:06:51.738  INFO 10300 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2018-11-17 19:06:51.895  INFO 10300 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application dimension-service with eureka with status UP
-2018-11-17 19:06:51.898  INFO 10300 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1542461811897, current=UP, previous=STARTING]
-2018-11-17 19:06:51.902  INFO 10300 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DIMENSION-SERVICE/9.85.74.17:dimension-service:8080: registering service...
-2018-11-17 19:06:51.982  INFO 10300 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DIMENSION-SERVICE/9.85.74.17:dimension-service:8080 - registration status: 204
-2018-11-17 19:06:52.022  INFO 10300 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2018-11-17 19:06:52.025  INFO 10300 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
-2018-11-17 19:06:52.029  INFO 10300 --- [restartedMain] c.e.m.d.DimensionServiceApplication      : Started DimensionServiceApplication in 29.514 seconds (JVM running for 31.046)
-2018-11-17 19:11:49.913  INFO 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 19:16:49.939  INFO 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 19:21:49.963  INFO 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 19:26:49.976  INFO 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 19:31:49.991  INFO 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 19:36:50.008  INFO 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 19:41:50.023  INFO 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 19:46:50.047  INFO 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 19:51:50.069  INFO 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 19:56:50.081  INFO 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 20:01:50.083  INFO 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 20:06:50.085  INFO 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 20:11:50.094  INFO 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 20:16:50.102  INFO 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 20:21:50.105  INFO 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 20:26:50.115  INFO 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 20:31:50.117  INFO 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 20:36:50.119  INFO 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 20:41:50.123  INFO 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 20:46:50.137  INFO 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 20:51:50.148  INFO 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 20:56:50.165  INFO 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 21:01:50.177  INFO 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 21:06:50.196  INFO 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 21:11:50.211  INFO 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 21:16:50.227  INFO 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 21:21:50.243  INFO 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 21:26:50.257  INFO 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 21:31:50.280  INFO 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 21:36:50.295  INFO 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 21:41:50.301  INFO 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 21:46:50.311  INFO 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 21:51:50.314  INFO 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 21:56:50.329  INFO 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 22:01:50.332  INFO 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 22:06:50.335  INFO 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 22:11:50.342  INFO 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 22:16:50.345  INFO 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 22:21:50.350  INFO 10300 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2018-11-17 22:22:30.175  INFO 10300 --- [RMI TCP Connection(242)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2018-11-17 22:22:30.218  INFO 10300 --- [RMI TCP Connection(242)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application dimension-service with eureka with status DOWN
-2018-11-17 22:22:30.218  WARN 10300 --- [RMI TCP Connection(242)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1542473550218, current=DOWN, previous=UP]
-2018-11-17 22:22:30.218  INFO 10300 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DIMENSION-SERVICE/9.85.74.17:dimension-service:8080: registering service...
-2018-11-17 22:22:30.328  INFO 10300 --- [RMI TCP Connection(242)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2018-11-17 22:22:30.421  INFO 10300 --- [RMI TCP Connection(242)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
-2018-11-17 22:22:30.458  WARN 10300 --- [RMI TCP Connection(242)-127.0.0.1] .s.c.a.CommonAnnotationBeanPostProcessor : Destroy method on bean with name 'scopedTarget.eurekaClient' threw an exception: org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
-2018-11-17 22:22:30.641 ERROR 10300 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
-
-com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
-	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
-	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.3.jar:1.9.3]
-	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
-	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
-	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
-	at com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529) ~[jersey-client-1.19.1.jar:1.19.1]
-	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102) ~[eureka-client-1.9.3.jar:1.9.3]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.3.jar:1.9.3]
-	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.3.jar:1.9.3]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.3.jar:1.9.3]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.3.jar:1.9.3]
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89) ~[eureka-client-1.9.3.jar:1.9.3]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.3.jar:1.9.3]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.3.jar:1.9.3]
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.3.jar:1.9.3]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.3.jar:1.9.3]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) [eureka-client-1.9.3.jar:1.9.3]
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.3.jar:1.9.3]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) [eureka-client-1.9.3.jar:1.9.3]
-	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:846) [eureka-client-1.9.3.jar:1.9.3]
-	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1399) [eureka-client-1.9.3.jar:1.9.3]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [na:1.8.0_191]
-	at java.util.concurrent.FutureTask.run(Unknown Source) [na:1.8.0_191]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_191]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_191]
-	at java.lang.Thread.run(Unknown Source) [na:1.8.0_191]
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_191]
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source) ~[na:1.8.0_191]
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:1.8.0_191]
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:1.8.0_191]
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_191]
-	at java.net.PlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_191]
-	at java.net.SocksSocketImpl.connect(Unknown Source) ~[na:1.8.0_191]
-	at java.net.Socket.connect(Unknown Source) ~[na:1.8.0_191]
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.6.jar:4.5.6]
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.6.jar:4.5.6]
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.6.jar:4.5.6]
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.6.jar:4.5.6]
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610) ~[httpclient-4.5.6.jar:4.5.6]
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445) ~[httpclient-4.5.6.jar:4.5.6]
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.6.jar:4.5.6]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.6.jar:4.5.6]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.6.jar:4.5.6]
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
-	... 26 common frames omitted
-
-2018-11-17 22:22:30.641 ERROR 10300 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error
-
-com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
-	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123) ~[jersey-client-1.19.1.jar:1.19.1]
-	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27) ~[eureka-client-1.9.3.jar:1.9.3]
-	at com.sun.jersey.api.client.Client.handle(Client.java:652) ~[jersey-client-1.19.1.jar:1.19.1]
-	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682) ~[jersey-client-1.19.1.jar:1.19.1]
-	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74) ~[jersey-client-1.19.1.jar:1.19.1]
-	at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509) ~[jersey-client-1.19.1.jar:1.19.1]
-	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194) ~[eureka-client-1.9.3.jar:1.9.3]
-	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:170) ~[eureka-client-1.9.3.jar:1.9.3]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.3.jar:1.9.3]
-	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73) ~[eureka-client-1.9.3.jar:1.9.3]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.3.jar:1.9.3]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.3.jar:1.9.3]
-	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89) ~[eureka-client-1.9.3.jar:1.9.3]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.3.jar:1.9.3]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.3.jar:1.9.3]
-	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) [eureka-client-1.9.3.jar:1.9.3]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.3.jar:1.9.3]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152) [eureka-client-1.9.3.jar:1.9.3]
-	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) [eureka-client-1.9.3.jar:1.9.3]
-	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149) [eureka-client-1.9.3.jar:1.9.3]
-	at com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1085) [eureka-client-1.9.3.jar:1.9.3]
-	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:967) [eureka-client-1.9.3.jar:1.9.3]
-	at com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1473) [eureka-client-1.9.3.jar:1.9.3]
-	at com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1440) [eureka-client-1.9.3.jar:1.9.3]
-	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) [na:1.8.0_191]
-	at java.util.concurrent.FutureTask.run(Unknown Source) [na:1.8.0_191]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_191]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_191]
-	at java.lang.Thread.run(Unknown Source) [na:1.8.0_191]
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[na:1.8.0_191]
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source) ~[na:1.8.0_191]
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source) ~[na:1.8.0_191]
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source) ~[na:1.8.0_191]
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_191]
-	at java.net.PlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_191]
-	at java.net.SocksSocketImpl.connect(Unknown Source) ~[na:1.8.0_191]
-	at java.net.Socket.connect(Unknown Source) ~[na:1.8.0_191]
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121) ~[httpclient-4.5.6.jar:4.5.6]
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180) ~[httpclient-4.5.6.jar:4.5.6]
-	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144) ~[httpclient-4.5.6.jar:4.5.6]
-	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134) ~[httpclient-4.5.6.jar:4.5.6]
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610) ~[httpclient-4.5.6.jar:4.5.6]
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445) ~[httpclient-4.5.6.jar:4.5.6]
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835) ~[httpclient-4.5.6.jar:4.5.6]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118) ~[httpclient-4.5.6.jar:4.5.6]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56) ~[httpclient-4.5.6.jar:4.5.6]
-	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173) ~[jersey-apache-client4-1.19.1.jar:1.19.1]
-	... 29 common frames omitted
-
-2018-11-17 22:22:30.641  WARN 10300 --- [DiscoveryClient-CacheRefreshExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused: connect
-2018-11-17 22:22:30.641  WARN 10300 --- [DiscoveryClient-HeartbeatExecutor-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused: connect
-2018-11-17 22:22:30.785  INFO 10300 --- [RMI TCP Connection(242)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2018-11-17 22:22:30.847  WARN 10300 --- [RMI TCP Connection(242)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [Eureka-JerseyClient-Conn-Cleaner2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- sun.misc.Unsafe.park(Native Method)
- java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
- java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
- java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
- java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
- java.lang.Thread.run(Unknown Source)
-2018-11-17 22:22:30.847  WARN 10300 --- [RMI TCP Connection(242)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [AsyncResolver-bootstrap-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- sun.misc.Unsafe.park(Native Method)
- java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
- java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
- java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
- java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
- java.lang.Thread.run(Unknown Source)
-2018-11-17 22:22:30.863  WARN 10300 --- [RMI TCP Connection(242)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [DiscoveryClient-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- sun.misc.Unsafe.park(Native Method)
- java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
- java.util.concurrent.FutureTask.awaitDone(Unknown Source)
- java.util.concurrent.FutureTask.get(Unknown Source)
- com.netflix.discovery.TimedSupervisorTask.run(TimedSupervisorTask.java:64)
- java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
- java.util.concurrent.FutureTask.run(Unknown Source)
- java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
- java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
- java.lang.Thread.run(Unknown Source)
-2018-11-17 22:22:30.863  WARN 10300 --- [RMI TCP Connection(242)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [DiscoveryClient-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- sun.misc.Unsafe.park(Native Method)
- java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
- java.util.concurrent.FutureTask.awaitDone(Unknown Source)
- java.util.concurrent.FutureTask.get(Unknown Source)
- com.netflix.discovery.TimedSupervisorTask.run(TimedSupervisorTask.java:64)
- java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
- java.util.concurrent.FutureTask.run(Unknown Source)
- java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
- java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
- java.lang.Thread.run(Unknown Source)
-2018-11-17 22:22:30.863  WARN 10300 --- [RMI TCP Connection(242)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [DiscoveryClient-InstanceInfoReplicator-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
- java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
- java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
- java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
- java.net.AbstractPlainSocketImpl.connect(Unknown Source)
- java.net.PlainSocketImpl.connect(Unknown Source)
- java.net.SocksSocketImpl.connect(Unknown Source)
- java.net.Socket.connect(Unknown Source)
- org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
- org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
- org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
- org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
- org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
- org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
- org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
- org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
- org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
- com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
- com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
- com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
- com.sun.jersey.api.client.Client.handle(Client.java:652)
- com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
- com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
- com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570)
- com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.register(AbstractJerseyEurekaHttpClient.java:56)
- com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
- com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
- com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
- com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
- com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89)
- com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
- com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
- com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
- com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
- com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
- com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
- com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
- com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829)
- com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
- com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
- java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
- java.util.concurrent.FutureTask.run(Unknown Source)
- java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
- java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
- java.lang.Thread.run(Unknown Source)
-2018-11-17 22:22:30.863  WARN 10300 --- [RMI TCP Connection(242)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [DiscoveryClient-CacheRefreshExecutor-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
- java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
- java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
- java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
- java.net.AbstractPlainSocketImpl.connect(Unknown Source)
- java.net.PlainSocketImpl.connect(Unknown Source)
- java.net.SocksSocketImpl.connect(Unknown Source)
- java.net.Socket.connect(Unknown Source)
- org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
- org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
- org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
- org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
- org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
- org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
- org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
- org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
- org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
- com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
- com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
- com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
- com.sun.jersey.api.client.Client.handle(Client.java:652)
- com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
- com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
- com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509)
- com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:194)
- com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getDelta(AbstractJerseyEurekaHttpClient.java:170)
- com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
- com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
- com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
- com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
- com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
- com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
- com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
- com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
- com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
- com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
- com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$7.execute(EurekaHttpClientDecorator.java:152)
- com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
- com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getDelta(EurekaHttpClientDecorator.java:149)
- com.netflix.discovery.DiscoveryClient.getAndUpdateDelta(DiscoveryClient.java:1085)
- com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:967)
- com.netflix.discovery.DiscoveryClient.refreshRegistry(DiscoveryClient.java:1473)
- com.netflix.discovery.DiscoveryClient$CacheRefreshThread.run(DiscoveryClient.java:1440)
- java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
- java.util.concurrent.FutureTask.run(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
- java.lang.Thread.run(Unknown Source)
-2018-11-17 22:22:30.863  WARN 10300 --- [RMI TCP Connection(242)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [DiscoveryClient-HeartbeatExecutor-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
- java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
- java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
- java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
- java.net.AbstractPlainSocketImpl.connect(Unknown Source)
- java.net.PlainSocketImpl.connect(Unknown Source)
- java.net.SocksSocketImpl.connect(Unknown Source)
- java.net.Socket.connect(Unknown Source)
- org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
- org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
- org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
- org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
- org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:610)
- org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:445)
- org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
- org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
- org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
- com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
- com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
- com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
- com.sun.jersey.api.client.Client.handle(Client.java:652)
- com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
- com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
- com.sun.jersey.api.client.WebResource$Builder.put(WebResource.java:529)
- com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:102)
- com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
- com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
- com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
- com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
- com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
- com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
- com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
- com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
- com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
- com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
- com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
- com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
- com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
- com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:846)
- com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1399)
- java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
- java.util.concurrent.FutureTask.run(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
- java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
- java.lang.Thread.run(Unknown Source)
-2018-11-17 22:22:30.863  WARN 10300 --- [RMI TCP Connection(242)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [AsyncResolver-bootstrap-executor-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2018-11-18 14:29:56.377  WARN 9680 --- [RMI TCP Connection(122)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [AsyncResolver-bootstrap-executor-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.park(Unknown Source)
  java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(Unknown Source)
@@ -818,3 +204,67 @@ Caused by: java.net.ConnectException: Connection refused: connect
  java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
  java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
  java.lang.Thread.run(Unknown Source)
+2018-11-18 17:54:20.290  INFO 20192 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2018-11-18 17:54:20.521  INFO 20192 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$7d97ec9b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-18 17:54:22.412  INFO 20192 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2018-11-18 17:54:48.203  INFO 20192 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=dimension-service, profiles=[dev], label=null, version=ccb4d512546408a955bbed9717a152fe65758cb6, state=null
+2018-11-18 17:54:48.209  INFO 20192 --- [restartedMain] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/TapojitB/BlogPost9Application/ConfigData/dimension-service-dev.properties'}, MapPropertySource {name='https://github.com/TapojitB/BlogPost9Application/ConfigData/dimension-service.properties'}]}
+2018-11-18 17:54:48.301  INFO 20192 --- [restartedMain] c.e.m.d.DimensionServiceApplication      : The following profiles are active: dev
+2018-11-18 17:54:51.086  WARN 20192 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2018-11-18 17:54:51.759  INFO 20192 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f7c1ab15-9a9f-3885-8698-ddeb1c175dfc
+2018-11-18 17:54:52.096  INFO 20192 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$7d97ec9b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-18 17:54:53.313  INFO 20192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-11-18 17:54:53.364  INFO 20192 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-11-18 17:54:53.366  INFO 20192 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-11-18 17:54:53.381  INFO 20192 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_191\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_191/bin/server;C:/Program Files/Java/jre1.8.0_191/bin;C:/Program Files/Java/jre1.8.0_191/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_191\bin;C:\Users\TapojitBhattacharya\Softwares\apache-maven-3.6.0\bin;C:\Program Files\IBM\Bluemix\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\TapojitBhattacharya\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\CVSNT\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;C:\Users\TapojitBhattacharya\Documents\Personal\Softwares\sts-4.0.1.RELEASE;;.]
+2018-11-18 17:54:54.099  INFO 20192 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-11-18 17:54:54.101  INFO 20192 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5766 ms
+2018-11-18 17:54:54.382  WARN 20192 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-11-18 17:54:54.384  INFO 20192 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-11-18 17:54:54.409  INFO 20192 --- [restartedMain] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@1bce849
+2018-11-18 17:54:56.822  INFO 20192 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2018-11-18 17:54:59.418  INFO 20192 --- [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2018-11-18 17:54:59.582  INFO 20192 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-11-18 17:54:59.710  INFO 20192 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-11-18 17:55:01.055  INFO 20192 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-11-18 17:55:01.059  INFO 20192 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-11-18 17:55:01.402  INFO 20192 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-11-18 17:55:01.405  INFO 20192 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-11-18 17:55:02.242  INFO 20192 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-11-18 17:55:02.670  INFO 20192 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-11-18 17:55:02.670  INFO 20192 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-11-18 17:55:02.675  INFO 20192 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-11-18 17:55:02.677  INFO 20192 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-11-18 17:55:02.688  INFO 20192 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-11-18 17:55:02.688  INFO 20192 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-11-18 17:55:02.691  INFO 20192 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-11-18 17:55:03.117  INFO 20192 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-11-18 17:55:03.117  INFO 20192 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2018-11-18 17:55:03.127  INFO 20192 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-11-18 17:55:03.136  INFO 20192 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1542543903136 with initial instances count: 2
+2018-11-18 17:55:03.627  INFO 20192 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-18 17:55:03.628  INFO 20192 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-11-18 17:55:03.629  INFO 20192 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-18 17:55:03.630  INFO 20192 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-11-18 17:55:03.630  INFO 20192 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-18 17:55:03.631  INFO 20192 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-11-18 17:55:03.631  INFO 20192 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-18 17:55:03.725  WARN 20192 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-11-18 17:55:03.726  INFO 20192 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-11-18 17:55:04.293  INFO 20192 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-11-18 17:55:05.341  WARN 20192 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2018-11-18 17:55:09.856  INFO 20192 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2018-11-18 17:55:10.224  INFO 20192 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application dimension-service with eureka with status UP
+2018-11-18 17:55:10.244  INFO 20192 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1542543910243, current=UP, previous=STARTING]
+2018-11-18 17:55:10.252  INFO 20192 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DIMENSION-SERVICE/localhost:dimension-service:8080: registering service...
+2018-11-18 17:55:10.358  INFO 20192 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DIMENSION-SERVICE/localhost:dimension-service:8080 - registration status: 204
+2018-11-18 17:55:10.433  INFO 20192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-11-18 17:55:10.435  INFO 20192 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2018-11-18 17:55:10.441  INFO 20192 --- [restartedMain] c.e.m.d.DimensionServiceApplication      : Started DimensionServiceApplication in 52.259 seconds (JVM running for 54.005)
+2018-11-18 18:00:02.704  INFO 20192 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-11-18 18:02:36.450  INFO 20192 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-11-18 18:02:36.464  INFO 20192 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-11-18 18:02:36.727  INFO 20192 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 263 ms
+2018-11-18 18:05:02.719  INFO 20192 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-11-18 18:10:02.729  INFO 20192 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-11-18 18:15:02.759  INFO 20192 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
